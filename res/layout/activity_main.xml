@@ -1,0 +1,367 @@
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical" 
+     android:descendantFocusability="beforeDescendants"  
+      >
+    
+    
+    <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"            
+        >
+    
+  <LinearLayout 
+     
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"   
+    android:orientation="vertical"  
+      >
+      				
+                 <TextView
+            			    android:id="@+id/mtv_02detail"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true"
+        					android:layout_marginTop="10dip" 
+        					android:layout_marginLeft="10dip"
+        					android:text="答题信息："
+        					android:textSize="14sp"		
+							android:textColor="#000" />
+                 
+                   <LinearLayout 
+            
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15dip"  
+        android:layout_marginRight="5dip"      
+        android:layout_marginLeft="5dip"  
+        android:drawable="@drawable/wode_image_background"   
+        android:background="@drawable/corners_bg" 
+        android:orientation="vertical"  
+            > 
+         <RelativeLayout
+      				    android:id="@+id/cetlisten"
+            			android:layout_width="fill_parent"
+            			android:layout_height="50dip"
+            			android:gravity="center_vertical"
+            		    android:layout_marginTop="10dip"
+            			android:clickable="true"
+            			 >
+            			 
+        				     <ImageView
+						     android:id="@+id/nick_nameimage1"
+        					android:layout_width="20dp"
+			   			    android:layout_height="20dp"
+        					android:layout_marginRight="2dip"      
+        					android:layout_marginLeft="10dip"     	     	
+        					
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentLeft="true"
+        					android:src="@drawable/clock" />
+        				     
+            			 <TextView
+            			    android:id="@+id/mtv_02"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true"
+        					android:layout_toRightOf="@id/nick_nameimage1"
+        					android:layout_marginLeft="13dip"
+        					android:text="听力"
+        					android:textSize="14sp"		
+							android:textColor="#000" />
+
+            			 <Button
+            			    android:id="@+id/listenbt01"  
+        					android:layout_height="wrap_content" 
+        					android:layout_width="50dp"  
+        					android:layout_toRightOf="@id/mtv_02"
+        					android:layout_marginLeft="30dip"
+        					android:layout_centerVertical="true"
+        					android:text="+"
+       						 />  
+       					 <TextView  
+       					    android:id="@+id/listenet01"  
+       		 				android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true" 
+       		 				android:layout_toRightOf="@id/listenbt01"
+       		 				android:layout_marginLeft="13dip"
+        					android:text="15"
+        					android:textSize="14sp"		
+							android:textColor="#000">
+       					 </TextView> 
+       					 
+       					  <Button
+            			    android:id="@+id/listenbt02"  
+        					android:layout_height="wrap_content" 
+        					android:layout_width="50dp"  
+        					android:layout_toRightOf="@id/listenet01"
+        					android:layout_marginLeft="13dip"
+        					android:layout_centerVertical="true"
+        					android:text="-"
+       						 />  
+										<ImageView
+						     android:id="@+id/nick_nameimage"
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"
+        					android:layout_marginRight="10dip"         	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />
+      				</RelativeLayout>
+
+      				 
+      				<View 
+                     android:layout_width="fill_parent" 
+                     android:layout_height="1dip"  
+                      android:background="@drawable/line"
+
+                    />
+      				 <RelativeLayout
+      				    android:id="@+id/cetread"
+            			android:layout_width="fill_parent"
+            			android:layout_height="50dip"
+            			android:gravity="center_vertical"
+            		    android:layout_marginTop="10dip"
+            			android:clickable="true"
+            		 >
+            			  <ImageView
+						     android:id="@+id/nick_nameimage1"
+        					android:layout_width="20dp"
+			   			    android:layout_height="20dp"
+        					android:layout_marginRight="2dip"      
+        					android:layout_marginLeft="10dip"     	     	
+        					
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentLeft="true"
+        					android:src="@drawable/company" />
+        				    
+            			 <TextView
+            			    android:id="@+id/mtv_02"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true"
+        					android:layout_toRightOf="@id/nick_nameimage1"
+        					android:layout_marginLeft="13dip"
+        					android:text="阅读"
+        					android:textSize="14sp"		
+							android:textColor="#000" />
+
+            			 	 <Button
+            			    android:id="@+id/readbt01"  
+        					android:layout_height="wrap_content" 
+        					android:layout_width="50dp"  
+        					android:layout_toRightOf="@id/mtv_02"
+        					android:layout_marginLeft="30dip"
+        					android:layout_centerVertical="true"
+        					android:text="+"
+       						 />  
+       					 <TextView  
+       					    android:id="@+id/readet01"  
+       		 				android:layout_width="wrap_content" 
+       		 				android:layout_height="wrap_content"  
+       		 				android:layout_toRightOf="@id/readbt01"
+       		 				android:layout_marginLeft="13dip"
+       		 				android:layout_centerVertical="true"
+        					android:text="15"
+        					android:textSize="14sp"		
+							android:textColor="#000">
+       					 </TextView> 
+       					 
+       					  <Button
+            			    android:id="@+id/readbt02"  
+        					android:layout_height="wrap_content" 
+        					android:layout_width="50dp"  
+        					android:layout_toRightOf="@id/readet01"
+        					android:layout_marginLeft="13dip"
+        					android:layout_centerVertical="true"
+        					android:text="-"
+       						 />  
+       						 
+							<ImageView
+						     android:id="@+id/nick_nameimage"
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"
+        					android:layout_marginRight="10dip"         	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />			
+      				</RelativeLayout>
+      				
+      				 <View 
+                     android:layout_width="fill_parent" 
+                     android:layout_height="1dip"  
+                      android:background="@drawable/line"
+
+                    />
+      				 
+            			  <RelativeLayout
+      				    android:id="@+id/cetmulti"
+            			android:layout_width="fill_parent"
+            			android:layout_height="50dip"
+            			android:gravity="center_vertical"
+            		    android:layout_marginTop="10dip"
+            			android:clickable="true"
+            		 >
+        				    <ImageView
+						     android:id="@+id/nick_nameimage1"
+        					android:layout_width="20dp"
+			   			    android:layout_height="20dp"
+        					android:layout_marginRight="2dip"      
+        					android:layout_marginLeft="10dip"     	     	
+        					
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentLeft="true"
+        					android:src="@drawable/takeplace" />
+            			 <TextView
+            			    android:id="@+id/mtv_02"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true"
+        					android:layout_toRightOf="@id/nick_nameimage1"
+        					android:layout_marginLeft="13dip"
+        					android:text="综合"
+        					android:textSize="14sp"		
+							android:textColor="#000" />
+
+            			  	 <Button
+            			    android:id="@+id/multibt01"  
+        					android:layout_height="wrap_content" 
+        					android:layout_width="50dp"  
+        					android:layout_toRightOf="@id/mtv_02"
+        					android:layout_marginLeft="30dip"
+        					android:layout_centerVertical="true"
+        					android:text="+"
+       						 />  
+       					 <TextView  
+       					    android:id="@+id/multiet01"  
+       		 				android:layout_width="wrap_content" 
+       		 				android:layout_height="wrap_content"  
+       		 				android:layout_toRightOf="@id/multibt01"
+       		 				android:layout_marginLeft="13dip"
+       		 				android:layout_centerVertical="true"
+        					android:text="15"
+        					android:textSize="14sp"		
+							android:textColor="#000">
+       					 </TextView> 
+       					 
+       					  <Button
+            			    android:id="@+id/multibt02"  
+        					android:layout_height="wrap_content" 
+        					android:layout_width="50dp"  
+        					android:layout_toRightOf="@id/multiet01"
+        					android:layout_marginLeft="13dip"
+        					android:layout_centerVertical="true"
+        					android:text="-"
+       						 />  
+       						 
+									<ImageView
+						     android:id="@+id/nick_nameimage"
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"
+        					android:layout_marginRight="10dip"         	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />
+      				</RelativeLayout>
+      				
+            			  	 <View 
+                     android:layout_width="fill_parent" 
+                     android:layout_height="1dip"  
+                      android:background="@drawable/line"
+
+                    />
+            			  <RelativeLayout
+      				    android:id="@+id/cetwriting"
+            			android:layout_width="fill_parent"
+            			android:layout_height="50dip"
+            			android:gravity="center_vertical"
+            		    android:layout_marginTop="10dip"
+            			android:clickable="true"
+            		 >
+        				    <ImageView
+						     android:id="@+id/nick_nameimage1"
+        					android:layout_width="20dp"
+			   			    android:layout_height="20dp"
+        					android:layout_marginRight="2dip"      
+        					android:layout_marginLeft="10dip"     	     	
+        					
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentLeft="true"
+        					android:src="@drawable/takeplace" />
+            			 <TextView
+            			    android:id="@+id/mtv_02"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true"
+        					android:layout_toRightOf="@id/nick_nameimage1"
+        					android:layout_marginLeft="13dip"
+        					android:text="作文"
+        					android:textSize="14sp"		
+							android:textColor="#000" />
+
+            			 	 <Button
+            			    android:id="@+id/writingbt01"  
+        					android:layout_height="wrap_content" 
+        					android:layout_width="50dp"  
+        					android:layout_toRightOf="@id/mtv_02"
+        					android:layout_marginLeft="30dip"
+        					android:layout_centerVertical="true"
+        					android:text="+"
+       						 />  
+       					 <TextView  
+       					    android:id="@+id/writinget01"  
+       		 				android:layout_width="wrap_content" 
+       		 				android:layout_height="wrap_content"  
+       		 				android:layout_toRightOf="@id/writingbt01"
+       		 				android:layout_marginLeft="13dip"
+       		 				android:layout_centerVertical="true"
+        					android:text="15"
+        					android:textSize="14sp"		
+							android:textColor="#000">
+       					 </TextView> 
+       					 
+       					  <Button
+            			    android:id="@+id/writingbt02"  
+        					android:layout_height="wrap_content" 
+        					android:layout_width="50dp"  
+        					android:layout_toRightOf="@id/writinget01"
+        					android:layout_marginLeft="13dip"
+        					android:layout_centerVertical="true"
+        					android:text="-"
+       						 /> 
+       						 
+									<ImageView
+						     android:id="@+id/nick_nameimage"
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"
+        					android:layout_marginRight="10dip"         	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />
+      				</RelativeLayout>
+      				</LinearLayout>
+            			<Button 
+         android:id="@+id/exit_login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip" 
+        android:layout_marginRight="10dip" 
+        android:textColor="#aeff39"
+        android:textSize="16sp"   
+        android:background="@drawable/next_normal"  
+         />
+  </LinearLayout>
+  
+    </ScrollView>
+    
+   </LinearLayout>
+

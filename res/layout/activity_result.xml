@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dedede"
+    android:orientation="vertical"
+    tools:context="com.example.nuyouni.QrcodeActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/detail_top"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/mimedetail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/back_seletor"
+            android:text="返回"
+            android:textColor="@drawable/text_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的得分"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+          </RelativeLayout>
+          
+         <ScrollView
+             android:layout_width="fill_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@+id/title" >
+    
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/title"
+      android:orientation="vertical" >
+
+      <RelativeLayout
+          android:id="@+id/activtiy_subjectplace"
+          android:layout_width="fill_parent"
+          android:layout_height="80dip"
+          android:layout_marginTop="5dip"
+          android:layout_weight="0.05"
+          android:clickable="true"
+          android:gravity="center_vertical" >
+
+          <TextView
+              android:id="@+id/mtv_02"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="您当前的总得分是："
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+
+           <TextView
+              android:id="@+id/mtv_03"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/mtv_02"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="450"
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+           
+          <TextView
+              android:id="@+id/mtv_00"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/mtv_02"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="20dip"
+              android:layout_marginRight="20dip"
+              android:layout_marginTop="5dip"
+              android:text="认证方式越多表示您的信用度越高，越容易得到他人的抢单"
+              android:textColor="#3a3a3a"
+              android:textSize="14sp" />
+
+          <ImageView
+              android:id="@+id/authimg"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/mtv_00"
+              android:layout_marginLeft="15dp"
+              android:layout_toRightOf="@+id/mtv_02" />
+      </RelativeLayout>
+
+ 
+
+          <RelativeLayout
+              android:id="@+id/activtiy_subject0"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="0dip"
+              android:clickable="true"
+              android:gravity="center_vertical" >
+
+              <TextView
+                  android:id="@+id/mtv_02"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="30dip"
+                  android:layout_marginLeft="20dip"
+                  android:text="单项得分："
+                  android:textColor="#714cb6"
+                  android:textSize="18sp" />
+
+               <TextView
+              android:id="@+id/mtv_reading"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:layout_below="@id/mtv_02"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="您的听力得分："
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+
+           <TextView
+              android:id="@+id/mtv_readingscore"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:layout_below="@id/mtv_02"
+              android:layout_toRightOf="@id/mtv_reading"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="450"
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+           
+                 <TextView
+              android:id="@+id/mtv_writing"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:layout_below="@id/mtv_reading"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="您的写作得分："
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+
+           <TextView
+              android:id="@+id/mtv_writingscore"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:layout_below="@id/mtv_reading"
+              android:layout_toRightOf="@id/mtv_writing"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="450"
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+           
+                  <TextView
+              android:id="@+id/mtv_multting"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:layout_below="@id/mtv_writing"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="您的综合得分："
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+
+           <TextView
+              android:id="@+id/mtv_multtingscore"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:layout_below="@id/mtv_writing"
+              android:layout_toRightOf="@id/mtv_multting"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="450"
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+           
+                <TextView
+              android:id="@+id/mtv_listening"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:layout_below="@id/mtv_multting"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="您的阅读得分："
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+
+           <TextView
+              android:id="@+id/mtv_listeningscore"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:layout_below="@id/mtv_multting"
+              android:layout_toRightOf="@id/mtv_listening"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="15dip"
+              android:text="450"
+              android:textColor="#3a3a3a"
+              android:textSize="18sp" />
+           
+          </RelativeLayout>
+
+          <View
+              android:layout_width="fill_parent"
+              android:layout_height="1dip"
+              android:background="@drawable/line" />
+
+          <View
+              android:layout_width="fill_parent"
+              android:layout_height="1dip"
+              android:background="@drawable/line" />
+
+     
+  </LinearLayout>
+  
+    </ScrollView>
+  
+
+</RelativeLayout>
